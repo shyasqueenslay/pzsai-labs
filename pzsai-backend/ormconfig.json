@@ -1,0 +1,23 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "pzsai",
+    "password": "password",
+    "database": "pzsaidb",
+    "synchronize": false,
+    "entities": [
+       "src/entities/**/*.js"
+    ],
+    "migrations": [
+       "src/migrations/**/*.js"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.js"
+    ],
+    "cli": {
+       "entitiesDir": "src/entities",
+       "migrationsDir": "src/migrations",
+       "subscribersDir": "src/subscribers"
+    }
+ }
